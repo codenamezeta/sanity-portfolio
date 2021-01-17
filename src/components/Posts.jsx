@@ -25,11 +25,11 @@ export default function Posts() {
       .catch(console.error)
   })
   return (
-    <main className='bg-blue-100 min-h-screen p-12'>
+    <main className='bg-blue-100 min-h-screen p-4 md:p-12'>
       <section className='container mx-auto'>
-        <h1 className='text-5xl flex justify-center cursive'>Posts Page</h1>
+        <h1 className='text-5xl flex justify-center cursive'>Posts</h1>
         <h2 className='text-lg text-gray-600 flex justify-center cursive mb-12'>
-          Subtitle
+          Mostly just a brain dump...
         </h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
           {postData &&

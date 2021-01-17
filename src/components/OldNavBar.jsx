@@ -2,15 +2,18 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { SocialIcon } from 'react-social-icons'
 
-export default function NavBar() {
+export default function NavBar(props) {
+  // if (props.transparent) {
+  //   const transparentStyle = "bg-gray-900 transparent"
+  // }
   return (
-    <header className='bg-blue-900'>
-      <nav className='container flex mx-auto justify-between text-pink-700'>
+    <header className='bg-gray-900 opacity-75 fixed top-0 z-10'>
+      <nav className='container flex mx-auto justify-between text-gray-400 flex-wrap'>
         <NavLink
           to='/'
           exact
           activeClassName='text-white'
-          className='inline-flex items-center py-6 px-3 mr-4 text-pink-700 hover:text-white text-4xl font-bold cursive tracking-widest'
+          className='inline-flex items-center py-6 px-3 mr-4 text-pink-400 hover:text-white text-4xl font-bold cursive tracking-widest'
         >
           Michael Zeta
         </NavLink>
@@ -67,7 +70,6 @@ export default function NavBar() {
           />
           <SocialIcon
             url='https://twitter.com/the2ndmsngr'
-            className='mr-4'
             target='_blank'
             fgColor='#fff'
             style={{ height: 35, width: 35 }}

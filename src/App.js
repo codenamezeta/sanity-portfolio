@@ -4,12 +4,12 @@ import About from './components/About'
 import SinglePost from './components/SinglePost'
 import Posts from './components/Posts'
 import Projects from './components/Projects'
-import NavBar from './components/NavBar'
+import Nav from './components/nav/Nav'
 
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
+      <Nav />
       <Switch>
         <Route component={Home} path='/' exact />
         <Route component={About} path='/about' />

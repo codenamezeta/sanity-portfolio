@@ -1,9 +1,9 @@
 @import url('https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css');
 @import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://use.typekit.net/fig2gkv.css');
 
 .cursive {
-  font-family: 'Amatic SC', cursive;
+  font-family: mr-eaves-modern, sans-serif;
   font-weight: 700;
 }
 
@@ -14,5 +14,10 @@
 }
 
 .home-name {
-  font-size: 150px;
+  font-size: 450%;
+}
+
+.transparent {
+  background-color: transparent;
+  /* height:  */
 }
