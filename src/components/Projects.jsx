@@ -14,10 +14,11 @@ export default function Projects() {
             description,
             projectType,
             link,
-            tags
+            
         }`
       )
-      .then((data) => setProject(data))
+      // @reverse() cause the query is sorted by oldest date first and I want new projects at the top.
+      .then((data) => setProject(data.reverse()))
       .catch(console.error)
   })
   return (
@@ -44,11 +45,11 @@ export default function Projects() {
                 </h3>
                 <div className='text-gray-500 md:space-x-4'>
                   <span>
-                    <strong className='font-bold text-sm'>Finished on</strong>{' '}
+                    <strong className='font-bold text-xs'>Updated</strong>{' '}
                     {new Date(project.date).toLocaleDateString()}
                   </span>
                   <span>
-                    <strong className='font-bold text-sm'>Project Type:</strong>{' '}
+                    <strong className='font-bold text-xs'>Project Type:</strong>{' '}
                     {project.projectType}
                   </span>
                   <p className='my-6 text-xs text-gray-700 leading-relaxed'>
