@@ -44,11 +44,11 @@ const Nav = () => {
               Posts
             </a>
           </li>
-          <li className='nav-item'>
+          {/* <li className='nav-item'>
             <a className='nav-link' href='/'>
               Contact
             </a>
-          </li>
+          </li> */}
           <li id='nav_open_item' onClick={() => setNavOpen(true)}>
             {/* <Icon name='bars' size='big' /> */}
             <span className='material-icons'>menu</span>
@@ -99,12 +99,12 @@ const Nav = () => {
               Posts
             </a>
           </li>
-          <li className='nav-item'>
+          {/* <li className='nav-item'>
             <a href='/contact' className='side-nav-link'>
               Contact
             </a>
-          </li>
-          <li className='nav-item'>
+          </li> */}
+          <li className='nav-item text-center'>
             <SocialIcon
               url='https://www.facebook.com/MichaelZeta11'
               className='ml-auto mr-2'
